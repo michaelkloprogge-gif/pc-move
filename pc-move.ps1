@@ -222,7 +222,7 @@ function Get-WallpaperFile {
 # Programs every PC already has, or that come with other programs: never worth installing by hand.
 $FrameworkRx = '^Microsoft\.(VCRedist|VCLibs|UI\.Xaml|DotNet\.(Runtime|DesktopRuntime|AspNetCore|HostingBundle)|WindowsAppRuntime|DirectX|EdgeWebView2Runtime|Edge|AppInstaller|OneDrive|WindowsTerminal|DesktopAppInstaller|NET\.Native|Services\.Store|StorePurchaseApp|WindowsStore|SecHealthUI|GamingServices)\b|^9WZDNCRFJ3PS$|^9NBLGGH4NNS1$'
 # Programs without a winget package that are not worth a to-do line either (drivers, runtimes, parts of Windows).
-$NotProgramRx = '(?i)redistributable|runtime|\bdriver|update for|hotfix|\bSDK\b|\.NET|WebView2|Visual C\+\+|Windows Software Development|DirectX|Microsoft Edge|OneDrive|Machine-Wide|Office 16 Click-to-Run|Microsoft Update Health|Windows PC Health Check|GameInput|Realtek|Intel\(R\)|Intel\u00AE|Intel |NVIDIA|AMD |Radeon|Synaptics|ELAN|Dolby|Waves|Conexant|Bonjour|vcpp|vs_|Microsoft Visual Studio Installer|Telemetry|Auto Updater|Windows Driver Package|Battery|Thunderbolt|Bluetooth|Chipset|Firmware|BIOS|ODBC|OLE DB|Native Client|Genuine Service|Help Viewer|Compatibility Fix|Add-in|Plug-?in\b|Updater\b|\(remove only\)|Tools for Applications|Python Launcher|App Installer|Windows Terminal'
+$NotProgramRx = '(?i)redistributable|runtime|\bdriver|update for|hotfix|\bSDK\b|\.NET|WebView2|Visual C\+\+|Windows Software Development|DirectX|Microsoft Edge|OneDrive|Machine-Wide|Office 16 Click-to-Run|Microsoft Update Health|Windows PC Health Check|GameInput|Realtek|Intel\(R\)|Intel\u00AE|Intel |NVIDIA|AMD |Radeon|Synaptics|ELAN|Dolby|Waves|Conexant|Bonjour|vcpp|vs_|Microsoft Visual Studio Installer|Telemetry|Auto Updater|Windows Driver Package|Battery|Thunderbolt|Bluetooth|Chipset|Firmware|BIOS|ODBC|OLE DB|Native Client|Genuine Service|Help Viewer|Compatibility Fix|Add-in|Plug-?in\b|Updater\b|\(remove only\)|Tools for Applications|Python Launcher|App Installer|Windows Terminal|Maintenance Service|CLR Types|Management Objects|LocalDB|Data-Tier|Integration Services'
 # Tools from the PC's maker: only useful on a PC of the same brand.
 $MakerRx = '(?i)^(Dell|HP|Hewlett|Lenovo|ASUS|Acer|MSI|Samsung|Microsoft Surface)\b|SupportAssist|MyASUS|Armoury Crate|Vantage'
 
@@ -715,6 +715,15 @@ $InventoryWork = {
         if ($ex.Cancelled) { return [pscustomobject]$out }
         $r = Invoke-Native $wg 'list --accept-source-agreements --disable-interactivity' 300
         $listed = @(ConvertFrom-WingetTable $r.Out)
+        # winget cuts long names off ("Microsoft SQL Server 2016 Management Ob..."): Windows' own list has them in full.
+        $keys = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*', 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
+        $arp = @(Get-ItemProperty $keys -ErrorAction SilentlyContinue | ForEach-Object { "$($_.DisplayName)".Trim() } | Where-Object { $_ } | Sort-Object -Unique)
+        foreach ($l in $listed) {
+            if ($l.Name -notmatch "$([char]0x2026)$") { continue }
+            $pre = $l.Name.TrimEnd([char]0x2026)
+            $full = @($arp | Where-Object { $_.StartsWith($pre, 'OrdinalIgnoreCase') })
+            if ($full.Count -eq 1) { $l.Name = $full[0] }
+        }
         if ($ex.TimedOut -or $r.TimedOut) { $out.WingetError = 'winget took too long - click Look again to try once more.' }
         $names = @{}; foreach ($l in $listed) { if ($l.Id) { $names[$l.Id.TrimEnd([char]0x2026)] = $l.Name } }
         $out.Apps = @(foreach ($e in $ex.Ids) {
@@ -737,10 +746,16 @@ $InventoryWork = {
         foreach ($n in $names) {
             $k++
             if (Test-Cancelled) { $out.Manual += $n; continue }
-            if ($n -match [char]0x2026 -or $n -eq 'Microsoft 365 (Office)') { $out.Manual += $n.TrimEnd([char]0x2026); continue }   # cut off by winget, or not one program
+            if ($n -match [char]0x2026 -or $n -eq 'Microsoft 365 (Office)') { $out.Manual += $n; continue }   # still cut off, or not one program
             Set-JobProgress "looking up $n" $k $names.Count
-            $s = Invoke-Native $wg "search --name `"$($n -replace '"', '')`" --exact --source winget --accept-source-agreements --disable-interactivity" 30
-            $hit = @(ConvertFrom-WingetTable $s.Out | Where-Object { $_.Name -eq $n -and $_.Id -and $_.Id -notmatch [char]0x2026 })
+            $hit = @()
+            # The exact name first, then without the version and "(x64 en-US)": "Mozilla Firefox (x64 en-US)" is "Mozilla Firefox" in winget.
+            $short = ($n -replace '\s*\([^)]*\)\s*$', '' -replace '\s+v?\d+(\.\d+)+.*$', '').Trim()
+            foreach ($q in @($n) + @($short | Where-Object { $_ -ne $n -and $_.Length -ge 4 })) {
+                $s = Invoke-Native $wg "search --name `"$($q -replace '"', '')`" --exact --source winget --accept-source-agreements --disable-interactivity" 30
+                $hit = @(ConvertFrom-WingetTable $s.Out | Where-Object { $_.Name -eq $q -and $_.Id -and $_.Id -notmatch [char]0x2026 })
+                if ($hit.Count -eq 1) { break }
+            }
             if ($hit.Count -eq 1) { $out.Apps += [pscustomobject]@{ Id = $hit[0].Id; Source = 'winget'; Name = $n } } else { $out.Manual += $n }
         }
     } else {
@@ -780,7 +795,7 @@ $InventoryWork = {
         if (-not (Test-Path -LiteralPath $b.Dir)) { continue }
         $out.Chromium += $b.Name
         $names = @{}
-        try { $ls = Get-Content -LiteralPath (Join-Path $b.Dir 'Local State') -Raw -Encoding UTF8 | ConvertFrom-Json; foreach ($p in $ls.profile.info_cache.PSObject.Properties) { $names[$p.Name] = "$($p.Value.name)" } } catch { }
+        try { $ls = Get-Content -LiteralPath (Join-Path $b.Dir 'Local State') -Raw -Encoding UTF8 -ErrorAction Stop | ConvertFrom-Json; foreach ($p in $ls.profile.info_cache.PSObject.Properties) { $names[$p.Name] = "$($p.Value.name)" } } catch { }
         foreach ($pd in Get-ChildItem -LiteralPath $b.Dir -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq 'Default' -or $_.Name -like 'Profile *' }) {
             $bf = Join-Path $pd.FullName 'Bookmarks'
             if (-not (Test-Path -LiteralPath $bf)) { continue }
