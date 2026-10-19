@@ -1,0 +1,16 @@
+name: Idea
+description: Suggest something PC Move could move, or explain better.
+title: "Idea: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like PC Move to do, and what problem would it solve for you?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: PC Move version

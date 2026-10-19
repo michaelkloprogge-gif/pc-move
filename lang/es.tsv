@@ -1,0 +1,269 @@
+Start	Inicio
+Pack up	Empaquetar
+Unpack	Desempaquetar
+To do	Pendiente
+Settings	Configuración
+Version {0}	Versión {0}
+Cancel	Cancelar
+Stopping...	Deteniendo...
+Run as administrator	Abrir como administrador
+As administrator, Wi-Fi passwords come along and programs install without questions.	Como administrador, las contraseñas Wi-Fi se llevan y los programas se instalan sin preguntas.
+Wait until PC Move is finished, or press Cancel first.	Espera a que PC Move termine, o pulsa primero Cancelar.
+PC Move is still busy. Stop and close anyway? What is done so far stays done.	PC Move sigue trabajando. ¿Detener y cerrar de todos modos? Lo que ya está hecho se queda hecho.
+Something went wrong:	Algo salió mal:
+Report this problem? (Opens GitHub with the details filled in - you see everything before you send it.)	¿Informar de este problema? (Abre GitHub con los datos ya rellenados - ves todo antes de enviarlo.)
+PC Move takes your programs, files, Wi-Fi networks and settings from your old PC to your new one. Run it on the old PC first, then on the new one.	PC Move lleva tus programas, archivos, redes Wi-Fi y ajustes de tu PC antiguo al nuevo. Ábrelo primero en el PC antiguo y después en el nuevo.
+This is my OLD PC	Este es mi PC ANTIGUO
+Pack up programs, files and settings onto a USB drive or external disk.	Empaquetar programas, archivos y ajustes en una memoria USB o un disco externo.
+This is my NEW PC	Este es mi PC NUEVO
+Unpack what you packed up on the old PC.	Desempaquetar lo que empaquetaste en el PC antiguo.
+Found a move folder: {0}	Carpeta de mudanza encontrada: {0}
+Is this the new PC? Unpack it.	¿Es este el PC nuevo? Desempaquétala.
+Unpack it	Desempaquetar
+How it works	Cómo funciona
+1.  On the old PC: start PC Move, choose "This is my OLD PC", tick what you want to take along and save it to a USB drive or external disk. PC Move puts a copy of itself there too.	1.  En el PC antiguo: abre PC Move, elige "Este es mi PC ANTIGUO", marca lo que quieres llevarte y guárdalo en una memoria USB o un disco externo. PC Move también deja ahí una copia de sí mismo.
+2.  On the new PC: plug in the drive, start PC-Move.exe from it and choose "This is my NEW PC". PC Move installs your programs, copies your files back and adds your Wi-Fi networks and settings. Nothing that is already on the new PC is overwritten.	2.  En el PC nuevo: conecta la unidad, abre PC-Move.exe desde ella y elige "Este es mi PC NUEVO". PC Move instala tus programas, vuelve a copiar tus archivos y añade tus redes Wi-Fi y ajustes. No se sobrescribe nada de lo que ya hay en el PC nuevo.
+3.  The To do page lists what no program can move for you, such as signing in to your browser and OneDrive, with a button for each step.	3.  La página Pendiente muestra lo que ningún programa puede mudar por ti, como iniciar sesión en tu navegador y en OneDrive, con un botón para cada paso.
+Your old PC is not changed: PC Move only reads from it. Everything stays on your own drive - nothing is uploaded anywhere.	Tu PC antiguo no se modifica: PC Move solo lee de él. Todo se queda en tu propia unidad - no se sube nada a ninguna parte.
+Run this on your old PC. Tick what you want to take along, choose a USB drive or external disk, then click Pack up. Your old PC is not changed.	Usa esto en tu PC antiguo. Marca lo que quieres llevarte, elige una memoria USB o un disco externo y haz clic en Empaquetar. Tu PC antiguo no se modifica.
+Pack up checked items	Empaquetar lo marcado
+Choose where to save...	Elegir dónde guardar...
+Look again	Volver a mirar
+Check all	Marcar todo
+Uncheck all	Desmarcar todo
+What	Qué
+Item	Elemento
+Size	Tamaño
+Note	Nota
+Status	Estado
+Program	Programa
+Folder	Carpeta
+Wi-Fi	Wi-Fi
+Setting	Ajuste
+Bookmarks	Marcadores
+Desktop	Escritorio
+Documents	Documentos
+Pictures	Imágenes
+Music	Música
+Videos	Vídeos
+Downloads	Descargas
+Favorites	Favoritos
+Looking at what is on this PC (about a minute)...	Mirando qué hay en este PC (alrededor de un minuto)...
+Looking at this PC	Revisando este PC
+programs (asking winget, up to a minute)	programas (preguntando a winget, hasta un minuto)
+looking up {0}	buscando {0}
+Wi-Fi networks	redes Wi-Fi
+bookmarks	marcadores
+size of {0}	tamaño de {0}
+Could not look at this PC - click Look again.	No se pudo revisar este PC - haz clic en Volver a mirar.
+comes with Windows or other programs	viene con Windows o con otros programas
+from the PC maker - only for a PC of the same brand	del fabricante del PC - solo para un PC de la misma marca
+from the Microsoft Store	de Microsoft Store
+installed again on the new PC	se vuelve a instalar en el PC nuevo
+already in OneDrive - it comes back when you sign in on the new PC	ya está en OneDrive - vuelve cuando inicies sesión en el PC nuevo
+empty	vacía
+often old installers - tick it if you want it	suelen ser instaladores antiguos - márcala si la quieres
+{0} files	{0} archivos
+open network, no password	red abierta, sin contraseña
+work or school network - you sign in again on the new PC	red del trabajo o del centro educativo - vuelves a iniciar sesión en el PC nuevo
+with its password	con su contraseña
+without its password - restart PC Move as administrator to include it	sin su contraseña - reinicia PC Move como administrador para incluirla
+Desktop background	Fondo de escritorio
+your own picture	tu propia imagen
+{0} bookmarks - you import them in the browser on the new PC	{0} marcadores - los importas en el navegador del PC nuevo
+Stopped - the list may be incomplete.	Detenido - puede que la lista esté incompleta.
+winget is missing on this PC, so programs go on the to-do list instead (install "App Installer" from the Microsoft Store to move them automatically).	Falta winget en este PC, así que los programas van a la lista de pendientes (instala "App Installer" desde Microsoft Store para mudarlos automáticamente).
+winget took too long - click Look again to try once more.	winget tardó demasiado - haz clic en Volver a mirar para intentarlo otra vez.
+{0} program(s) are not in winget - they go on the new PC's to-do list.	{0} programa(s) no están en winget - van a la lista de pendientes del PC nuevo.
+Tick what you want to take along.	Marca lo que quieres llevarte.
+Selected: {0} item(s), {1} of files.  Next: choose where to save - a USB drive or external disk with enough free space.	Seleccionado: {0} elemento(s), {1} de archivos.  Siguiente: elige dónde guardar - una memoria USB o un disco externo con suficiente espacio libre.
+Saving to: {0}  ({1} free)	Guardando en: {0}  ({1} libres)
+Selected: {0} item(s), {1} of files.	Seleccionado: {0} elemento(s), {1} de archivos.
+Not enough free space - untick some folders or choose a bigger drive.	No hay suficiente espacio libre - desmarca algunas carpetas o elige una unidad más grande.
+Choose a USB drive, external disk or network folder. PC Move makes a new folder in it.	Elige una memoria USB, un disco externo o una carpeta de red. PC Move crea una carpeta nueva dentro.
+That is on this PC's own drive ({0}), which stays behind when you move. Choose a USB drive, an external disk or a network folder instead?	Eso está en la unidad de este PC ({0}), que se queda atrás al mudarte. ¿Elegir mejor una memoria USB, un disco externo o una carpeta de red?
+Yes = choose again, No = use it anyway (for example to copy it later).	Sí = elegir de nuevo, No = usarla igualmente (por ejemplo, para copiarla más tarde).
+Tick at least one item first.	Marca primero al menos un elemento.
+There is not enough free space on {0}: {1} needed, {2} free.	No hay suficiente espacio libre en {0}: se necesitan {1}, hay {2} libres.
+Untick some folders or choose another drive.	Desmarca algunas carpetas o elige otra unidad.
+Pack up {0} item(s) ({1} of files) to:	¿Empaquetar {0} elemento(s) ({1} de archivos) en:
+The Wi-Fi passwords are saved as plain text in the move folder. Keep the drive safe, and delete the folder when the move is done.	Las contraseñas Wi-Fi se guardan como texto sin cifrar en la carpeta de mudanza. Guarda bien la unidad y borra la carpeta cuando termine la mudanza.
+Packing up...	Empaquetando...
+Packing up	Empaquetando
+PC Move itself	el propio PC Move
+desktop background	fondo de escritorio
+copying {0}	copiando {0}
+Packing up failed: {0}	Error al empaquetar: {0}
+Packing up failed:	Error al empaquetar:
+Stopped. What was copied so far is in {0} - click Pack up to start again.	Detenido. Lo copiado hasta ahora está en {0} - haz clic en Empaquetar para empezar de nuevo.
+Done: {0}	Listo: {0}
+Everything is packed up in:	Todo está empaquetado en:
+Some files in {0} could not be copied - usually because a program had them open. Close your programs and click Pack up again to try once more.	Algunos archivos de {0} no se pudieron copiar - normalmente porque un programa los tenía abiertos. Cierra tus programas y vuelve a hacer clic en Empaquetar.
+Next: take the drive to your new PC, open this folder there and start PC-Move.exe, then choose "This is my NEW PC".	Siguiente: lleva la unidad a tu PC nuevo, abre allí esta carpeta, abre PC-Move.exe y elige "Este es mi PC NUEVO".
+Run this on your new PC. Open the move folder from your old PC, tick what you want, then click Unpack. Files that are already here are never overwritten.	Usa esto en tu PC nuevo. Abre la carpeta de mudanza de tu PC antiguo, marca lo que quieras y haz clic en Desempaquetar. Los archivos que ya están aquí nunca se sobrescriben.
+Unpack checked items	Desempaquetar lo marcado
+Open a move folder...	Abrir una carpeta de mudanza...
+No move folder open yet. Plug in the drive from your old PC and click "Open a move folder...".	Todavía no hay ninguna carpeta de mudanza abierta. Conecta la unidad de tu PC antiguo y haz clic en "Abrir una carpeta de mudanza...".
+Choose the "PC Move - ..." folder you made on your old PC.	Elige la carpeta "PC Move - ..." que creaste en tu PC antiguo.
+That folder is not a PC Move folder (it has no pc-move.json).	Esa carpeta no es una carpeta de PC Move (no tiene pc-move.json).
+Choose the folder whose name starts with "PC Move - ", on the drive you used on the old PC.	Elige la carpeta cuyo nombre empieza por "PC Move - ", en la unidad que usaste en el PC antiguo.
+Move folder: {0}	Carpeta de mudanza: {0}
+From {0} ({1}), packed up on {2}.	De {0} ({1}), empaquetado el {2}.
+Packing up did not finish on the old PC, so some files may be missing.	El empaquetado no terminó en el PC antiguo, así que pueden faltar archivos.
+Checking what this PC already has (up to a minute)...	Comprobando qué tiene ya este PC (hasta un minuto)...
+Checking this PC	Comprobando este PC
+programs already installed (asking winget)	programas ya instalados (preguntando a winget)
+needs winget - see the note below	necesita winget - mira la nota de abajo
+already on this PC	ya está en este PC
+will be installed	se instalará
+will be installed from the Microsoft Store	se instalará desde Microsoft Store
+{0}  ->  {1}	{0}  ->  {1}
+goes into OneDrive on this PC; files already here are skipped	va a OneDrive en este PC; se omiten los archivos que ya están aquí
+files already here are skipped	se omiten los archivos que ya están aquí
+will be added	se añadirá
+will be added - Windows asks the password once	se añadirá - Windows pide la contraseña una vez
+already {0}	ya {0}
+{0} -> {1}	{0} -> {1}
+your picture from the old PC	tu imagen del PC antiguo
+{0} bookmarks - saved to Documents, then you import them (see To do)	{0} marcadores - se guardan en Documentos y luego los importas (ver Pendiente)
+winget is missing on this PC, so programs cannot be installed automatically. Install "App Installer" from the Microsoft Store (Settings > Open the Store page), then open the move folder again.	Falta winget en este PC, así que los programas no se pueden instalar automáticamente. Instala "App Installer" desde Microsoft Store y vuelve a abrir la carpeta de mudanza.
+{0} item(s) ready to unpack. Afterwards, the To do page has {1} step(s) to do yourself.	{0} elemento(s) listo(s) para desempaquetar. Después, la página Pendiente tiene {1} paso(s) que haces tú.
+Nothing left to unpack - everything is already on this PC. The To do page has {0} step(s) to do yourself.	No queda nada por desempaquetar - todo está ya en este PC. La página Pendiente tiene {0} paso(s) que haces tú.
+Unpack {0} item(s) onto this PC?	¿Desempaquetar {0} elemento(s) en este PC?
+Files that are already here are not overwritten. Settings can be undone in Settings.	Los archivos que ya están aquí no se sobrescriben. Los ajustes se pueden deshacer en Configuración.
+{0} program(s) will be installed. Some installers ask for permission (a Windows prompt) - to avoid that, click No and use "Run as administrator" first.	Se instalarán {0} programa(s). Algunos instaladores piden permiso (una ventana de Windows) - para evitarlo, haz clic en No y usa primero "Abrir como administrador".
+Installing {0} program(s) can take a while; you can keep using the PC.	Instalar {0} programa(s) puede tardar un rato; puedes seguir usando el PC.
+waiting...	esperando...
+Unpacking...	Desempaquetando...
+Unpacking	Desempaquetando
+setting: {0}	ajuste: {0}
+Wi-Fi: {0}	Wi-Fi: {0}
+bookmarks: {0}	marcadores: {0}
+installing {0} ({1} of {2})	instalando {0} ({1} de {2})
+not done - you pressed Cancel	no hecho - pulsaste Cancelar
+done	hecho
+Windows did not accept the picture	Windows no aceptó la imagen
+Windows did not accept it	Windows no lo aceptó
+saved to Documents - import it next (see To do)	guardado en Documentos - impórtalo ahora (ver Pendiente)
+stopped - you pressed Cancel	detenido - pulsaste Cancelar
+some files could not be copied	algunos archivos no se pudieron copiar
+{0} file(s) copied	{0} archivo(s) copiado(s)
+everything was already here	todo estaba ya aquí
+took longer than 30 minutes - stopped	tardó más de 30 minutos - detenido
+installed	instalado
+{0} item(s) done.	{0} elemento(s) hecho(s).
+{0} item(s) done, {1} did not work (see the Status column) - tick them and click Unpack to try again.	{0} elemento(s) hecho(s), {1} no funcionó (mira la columna Estado) - márcalos y haz clic en Desempaquetar para intentarlo de nuevo.
+Unpacked: {0} item(s) done.	Desempaquetado: {0} elemento(s) hecho(s).
+Unpacked: {0} item(s) done, {1} did not work - see the Status column.	Desempaquetado: {0} elemento(s) hecho(s), {1} no funcionó - mira la columna Estado.
+Some Explorer and taskbar settings show after you sign out and back in.	Algunos ajustes del Explorador y de la barra de tareas se ven después de cerrar sesión y volver a entrar.
+Next: the To do page has {0} step(s) to do yourself.	Siguiente: la página Pendiente tiene {0} paso(s) que haces tú.
+What PC Move cannot do for you, one step at a time. Click a step, then the button: it opens the right place. Tick a step when it is done.	Lo que PC Move no puede hacer por ti, paso a paso. Haz clic en un paso y luego en el botón: abre el sitio correcto. Marca un paso cuando esté hecho.
+Do this step	Hacer este paso
+Step	Paso
+Why	Por qué
+Open a move folder on the Unpack page first.	Abre primero una carpeta de mudanza en la página Desempaquetar.
+{0} step(s) left.	Quedan {0} paso(s).
+All done - enjoy your new PC.	Todo listo - disfruta de tu PC nuevo.
+Click a step in the list first.	Haz clic primero en un paso de la lista.
+Import your {0} bookmarks ({1})	Importar tus marcadores de {0} ({1})
+In {0}: import, choose "Bookmarks HTML file" and pick the file in Documents > Bookmarks from the old PC.	En {0}: importa, elige "Archivo HTML de marcadores" y selecciona el archivo en Documentos > Bookmarks from the old PC.
+Sign in to {0}	Iniciar sesión en {0}
+Saved passwords and open tabs come back when you sign in (they cannot be copied).	Las contraseñas guardadas y las pestañas abiertas vuelven al iniciar sesión (no se pueden copiar).
+Sign in to Firefox	Iniciar sesión en Firefox
+Firefox bookmarks and passwords come back through your Firefox account.	Los marcadores y contraseñas de Firefox vuelven a través de tu cuenta de Firefox.
+Sign in to OneDrive	Iniciar sesión en OneDrive
+{0} were in OneDrive on the old PC - they come back when you sign in.	{0} estaban en OneDrive en el PC antiguo - vuelven al iniciar sesión.
+Connect to Wi-Fi "{0}"	Conectarse a la Wi-Fi "{0}"
+Its password was not packed up - Windows asks for it once.	Su contraseña no se empaquetó - Windows la pide una vez.
+Sign in to Steam and install your games	Iniciar sesión en Steam e instalar tus juegos
+Your games are in your Steam library; Steam downloads them again.	Tus juegos están en tu biblioteca de Steam; Steam los vuelve a descargar.
+Install Microsoft 365 (Office)	Instalar Microsoft 365 (Office)
+Sign in at microsoft365.com with the same account, then click Install apps.	Inicia sesión en microsoft365.com con la misma cuenta y haz clic en Instalar aplicaciones.
+Install {0}	Instalar {0}
+winget does not know this program - get it from its maker's website.	winget no conoce este programa - descárgalo de la web de su fabricante.
+Choose your default browser and apps	Elegir tu navegador y aplicaciones predeterminados
+Windows only lets you do this yourself.	Windows solo te deja hacerlo a ti.
+Add your printer	Añadir tu impresora
+Printers usually appear by themselves on the same network; otherwise add it here.	Las impresoras suelen aparecer solas en la misma red; si no, añádela aquí.
+Run Windows Update	Ejecutar Windows Update
+A new PC often has drivers and updates waiting.	Un PC nuevo suele tener controladores y actualizaciones pendientes.
+Delete the move folder when everything works	Borrar la carpeta de mudanza cuando todo funcione
+It holds a copy of your files and your Wi-Fi passwords.	Contiene una copia de tus archivos y tus contraseñas Wi-Fi.
+{0} is not installed on this PC yet. Install it first (it may be in the list on the Unpack page), then try this step again.	{0} todavía no está instalado en este PC. Instálalo primero (quizá esté en la lista de la página Desempaquetar) y vuelve a intentar este paso.
+{0} is not installed on this PC yet.	{0} todavía no está instalado en este PC.
+How PC Move looks and behaves. Changes are saved straight away.	Cómo se ve y se comporta PC Move. Los cambios se guardan al momento.
+Language	Idioma
+Takes effect when PC Move restarts.	Se aplica cuando PC Move se reinicia.
+Automatic (Windows language)	Automático (idioma de Windows)
+Restart now	Reiniciar ahora
+Theme	Tema
+Light, dark, or the same as Windows. Takes effect when PC Move restarts.	Claro, oscuro o igual que Windows. Se aplica cuando PC Move se reinicia.
+Same as Windows	Igual que Windows
+Light	Claro
+Dark	Oscuro
+Undo	Deshacer
+Puts back the Windows settings and desktop background that PC Move changed on this PC. Programs, files and Wi-Fi networks stay: remove those the usual way if you don't want them.	Restaura los ajustes de Windows y el fondo de escritorio que PC Move cambió en este PC. Los programas, archivos y redes Wi-Fi se quedan: quítalos de la forma habitual si no los quieres.
+Undo settings changes	Deshacer cambios de ajustes
+Undo settings changes ({0})	Deshacer cambios de ajustes ({0})
+Put back {0} setting(s) the way they were before PC Move changed them?	¿Restaurar {0} ajuste(s) como estaban antes de que PC Move los cambiara?
+Done. Some Explorer and taskbar settings show after you sign out and back in.	Listo. Algunos ajustes del Explorador y de la barra de tareas se ven después de cerrar sesión y volver a entrar.
+Updates	Actualizaciones
+You have version {0}. New versions come from github.com/{1} and are checked against GitHub's checksum before they are installed.	Tienes la versión {0}. Las versiones nuevas vienen de github.com/{1} y se comprueban con la suma de verificación de GitHub antes de instalarse.
+Check for updates when PC Move starts	Buscar actualizaciones al iniciar PC Move
+Check for updates now	Buscar actualizaciones ahora
+Downloading...	Descargando...
+Install	Instalación
+PC Move runs straight from the file - installing is not needed. Install it if you want it in the Start menu and in Settings > Apps.	PC Move funciona directamente desde el archivo - no hace falta instalarlo. Instálalo si lo quieres en el menú Inicio y en Configuración > Aplicaciones.
+Install on this PC	Instalar en este PC
+Uninstall	Desinstalar
+Files	Archivos
+PC Move keeps a log of what it did and its settings in {0}.	PC Move guarda un registro de lo que hizo y su configuración en {0}.
+Open the log	Abrir el registro
+Open the folder	Abrir la carpeta
+Nothing has been logged yet.	Todavía no se ha registrado nada.
+Help and feedback	Ayuda y comentarios
+Something not working, or an idea? It opens a report on GitHub with the version, Windows and recent errors already filled in (your name, folders and PC name are blanked out) - you see everything before you send it.	¿Algo no funciona, o tienes una idea? Abre un informe en GitHub con la versión, Windows y los errores recientes ya rellenados (tu nombre, carpetas y nombre del PC se ocultan) - ves todo antes de enviarlo.
+Report a problem...	Informar de un problema...
+Suggest an idea...	Sugerir una idea...
+This opens GitHub with a new problem report, filled in with:	Esto abre GitHub con un nuevo informe de problema, rellenado con:
+You can read and change everything there before you press Submit. You need a free GitHub account.	Allí puedes leer y cambiar todo antes de pulsar Submit. Necesitas una cuenta gratuita de GitHub.
+About	Acerca de
+PC Move {0} - free and open source (MIT licence). Privacy: everything stays on your own PCs and drive. The only internet use is the update check (GitHub) and winget, which downloads the programs you move.	PC Move {0} - gratuito y de código abierto (licencia MIT). Privacidad: todo se queda en tus propios PC y en tu unidad. Internet solo se usa para buscar actualizaciones (GitHub) y por winget, que descarga los programas que mudas.
+Install from PC-Move.exe, not from the script.	Instala desde PC-Move.exe, no desde el script.
+Installing failed: {0}	Error al instalar: {0}
+PC Move is installed. It is in the Start menu, and you can uninstall it in Settings > Apps.	PC Move está instalado. Está en el menú Inicio y puedes desinstalarlo en Configuración > Aplicaciones.
+Remove PC Move from this PC?	¿Quitar PC Move de este PC?
+Also delete its settings and log?	¿Borrar también su configuración y su registro?
+PC Move has been removed.	PC Move se ha quitado.
+Couldn't check for updates:	No se pudieron buscar actualizaciones:
+You have the latest version ({0}).	Tienes la última versión ({0}).
+PC Move {0} is available (you have {1}).	PC Move {0} está disponible (tienes {1}).
+It was installed with winget, so winget updates it. Update now? (A window opens; start PC Move again afterwards.)	Se instaló con winget, así que winget lo actualiza. ¿Actualizar ahora? (Se abre una ventana; vuelve a abrir PC Move después.)
+Open the download page?	¿Abrir la página de descarga?
+Update now? The app restarts by itself.	¿Actualizar ahora? La aplicación se reinicia sola.
+Downloading the update	Descargando la actualización
+Update failed: {0}	Error al actualizar: {0}
+Couldn't replace the app file ({0}). Download it yourself from:	No se pudo reemplazar el archivo de la aplicación ({0}). Descárgalo tú desde:
+App colours	Colores de las aplicaciones
+Windows colours	Colores de Windows
+Taskbar icons	Iconos de la barra de tareas
+Search on the taskbar	Búsqueda en la barra de tareas
+File name extensions	Extensiones de nombre de archivo
+Hidden files	Archivos ocultos
+File Explorer opens on	El Explorador se abre en
+Mouse pointer speed	Velocidad del puntero
+Double-click speed	Velocidad del doble clic
+dark	oscuro
+light	claro
+on the left	a la izquierda
+in the centre	en el centro
+hidden	oculto
+icon	icono
+search box	cuadro de búsqueda
+icon and label	icono y etiqueta
+shown	visible
+This PC	Este equipo
+Home	Inicio
+Windows default	valor predeterminado de Windows
+already dark	ya oscuro
+already light	ya claro

@@ -1,0 +1,269 @@
+Start	Start
+Pack up	Inpakken
+Unpack	Uitpakken
+To do	Te doen
+Settings	Instellingen
+Version {0}	Versie {0}
+Cancel	Annuleren
+Stopping...	Stoppen...
+Run as administrator	Als beheerder starten
+As administrator, Wi-Fi passwords come along and programs install without questions.	Als beheerder gaan wifi-wachtwoorden mee en installeren programma's zonder vragen.
+Wait until PC Move is finished, or press Cancel first.	Wacht tot PC Move klaar is, of klik eerst op Annuleren.
+PC Move is still busy. Stop and close anyway? What is done so far stays done.	PC Move is nog bezig. Toch stoppen en sluiten? Wat al klaar is, blijft klaar.
+Something went wrong:	Er ging iets mis:
+Report this problem? (Opens GitHub with the details filled in - you see everything before you send it.)	Dit probleem melden? (Opent GitHub met de gegevens al ingevuld - je ziet alles voordat je het verstuurt.)
+PC Move takes your programs, files, Wi-Fi networks and settings from your old PC to your new one. Run it on the old PC first, then on the new one.	PC Move verhuist je programma's, bestanden, wifi-netwerken en instellingen van je oude pc naar je nieuwe. Start het eerst op de oude pc, daarna op de nieuwe.
+This is my OLD PC	Dit is mijn OUDE pc
+Pack up programs, files and settings onto a USB drive or external disk.	Programma's, bestanden en instellingen inpakken op een usb-stick of externe schijf.
+This is my NEW PC	Dit is mijn NIEUWE pc
+Unpack what you packed up on the old PC.	Uitpakken wat je op de oude pc hebt ingepakt.
+Found a move folder: {0}	Verhuismap gevonden: {0}
+Is this the new PC? Unpack it.	Is dit de nieuwe pc? Pak hem dan uit.
+Unpack it	Uitpakken
+How it works	Zo werkt het
+1.  On the old PC: start PC Move, choose "This is my OLD PC", tick what you want to take along and save it to a USB drive or external disk. PC Move puts a copy of itself there too.	1.  Op de oude pc: start PC Move, kies "Dit is mijn OUDE pc", vink aan wat je mee wilt nemen en sla het op een usb-stick of externe schijf op. PC Move zet daar ook een kopie van zichzelf neer.
+2.  On the new PC: plug in the drive, start PC-Move.exe from it and choose "This is my NEW PC". PC Move installs your programs, copies your files back and adds your Wi-Fi networks and settings. Nothing that is already on the new PC is overwritten.	2.  Op de nieuwe pc: sluit de schijf aan, start PC-Move.exe daarvandaan en kies "Dit is mijn NIEUWE pc". PC Move installeert je programma's, zet je bestanden terug en voegt je wifi-netwerken en instellingen toe. Wat al op de nieuwe pc staat, wordt niet overschreven.
+3.  The To do page lists what no program can move for you, such as signing in to your browser and OneDrive, with a button for each step.	3.  De pagina Te doen toont wat geen programma voor je kan verhuizen, zoals inloggen in je browser en OneDrive, met een knop voor elke stap.
+Your old PC is not changed: PC Move only reads from it. Everything stays on your own drive - nothing is uploaded anywhere.	Je oude pc wordt niet veranderd: PC Move leest er alleen van. Alles blijft op je eigen schijf - er wordt niets geüpload.
+Run this on your old PC. Tick what you want to take along, choose a USB drive or external disk, then click Pack up. Your old PC is not changed.	Gebruik dit op je oude pc. Vink aan wat je mee wilt nemen, kies een usb-stick of externe schijf en klik op Inpakken. Je oude pc wordt niet veranderd.
+Pack up checked items	Aangevinkte items inpakken
+Choose where to save...	Schijf kiezen...
+Look again	Opnieuw kijken
+Check all	Alles aanvinken
+Uncheck all	Alles uitvinken
+What	Wat
+Item	Item
+Size	Grootte
+Note	Opmerking
+Status	Status
+Program	Programma
+Folder	Map
+Wi-Fi	Wifi
+Setting	Instelling
+Bookmarks	Bladwijzers
+Desktop	Bureaublad
+Documents	Documenten
+Pictures	Afbeeldingen
+Music	Muziek
+Videos	Video's
+Downloads	Downloads
+Favorites	Favorieten
+Looking at what is on this PC (about a minute)...	Kijken wat er op deze pc staat (ongeveer een minuut)...
+Looking at this PC	Deze pc bekijken
+programs (asking winget, up to a minute)	programma's (winget vragen, tot een minuut)
+looking up {0}	{0} opzoeken
+Wi-Fi networks	wifi-netwerken
+bookmarks	bladwijzers
+size of {0}	grootte van {0}
+Could not look at this PC - click Look again.	Kon deze pc niet bekijken - klik op Opnieuw kijken.
+comes with Windows or other programs	hoort bij Windows of bij andere programma's
+from the PC maker - only for a PC of the same brand	van de pc-fabrikant - alleen voor een pc van hetzelfde merk
+from the Microsoft Store	uit de Microsoft Store
+installed again on the new PC	wordt opnieuw geïnstalleerd
+already in OneDrive - it comes back when you sign in on the new PC	staat al in OneDrive - komt terug als je inlogt op de nieuwe pc
+empty	leeg
+often old installers - tick it if you want it	vaak oude installatiebestanden - vink aan als je het wilt
+{0} files	{0} bestanden
+open network, no password	open netwerk, geen wachtwoord
+work or school network - you sign in again on the new PC	werk- of schoolnetwerk - je logt opnieuw in op de nieuwe pc
+with its password	met wachtwoord
+without its password - restart PC Move as administrator to include it	zonder wachtwoord - start PC Move opnieuw als beheerder om het mee te nemen
+Desktop background	Bureaubladachtergrond
+your own picture	je eigen afbeelding
+{0} bookmarks - you import them in the browser on the new PC	{0} bladwijzers - je importeert ze in de browser op de nieuwe pc
+Stopped - the list may be incomplete.	Gestopt - de lijst is misschien niet compleet.
+winget is missing on this PC, so programs go on the to-do list instead (install "App Installer" from the Microsoft Store to move them automatically).	winget ontbreekt op deze pc, dus programma's komen op de takenlijst (installeer "App Installer" uit de Microsoft Store om ze automatisch te verhuizen).
+winget took too long - click Look again to try once more.	winget deed er te lang over - klik op Opnieuw kijken om het nog eens te proberen.
+{0} program(s) are not in winget - they go on the new PC's to-do list.	{0} programma('s) staan niet in winget - die komen op de takenlijst van de nieuwe pc.
+Tick what you want to take along.	Vink aan wat je mee wilt nemen.
+Selected: {0} item(s), {1} of files.  Next: choose where to save - a USB drive or external disk with enough free space.	Gekozen: {0} item(s), {1} aan bestanden.  Volgende stap: kies waar het naartoe gaat - een usb-stick of externe schijf met genoeg vrije ruimte.
+Saving to: {0}  ({1} free)	Opslaan in: {0}  ({1} vrij)
+Selected: {0} item(s), {1} of files.	Gekozen: {0} item(s), {1} aan bestanden.
+Not enough free space - untick some folders or choose a bigger drive.	Niet genoeg vrije ruimte - vink een paar mappen uit of kies een grotere schijf.
+Choose a USB drive, external disk or network folder. PC Move makes a new folder in it.	Kies een usb-stick, externe schijf of netwerkmap. PC Move maakt er een nieuwe map in.
+That is on this PC's own drive ({0}), which stays behind when you move. Choose a USB drive, an external disk or a network folder instead?	Dat staat op de eigen schijf van deze pc ({0}), en die blijft achter als je verhuist. Liever een usb-stick, externe schijf of netwerkmap kiezen?
+Yes = choose again, No = use it anyway (for example to copy it later).	Ja = opnieuw kiezen, Nee = toch gebruiken (bijvoorbeeld om het later te kopiëren).
+Tick at least one item first.	Vink eerst minstens één item aan.
+There is not enough free space on {0}: {1} needed, {2} free.	Er is niet genoeg vrije ruimte op {0}: {1} nodig, {2} vrij.
+Untick some folders or choose another drive.	Vink een paar mappen uit of kies een andere schijf.
+Pack up {0} item(s) ({1} of files) to:	{0} item(s) ({1} aan bestanden) inpakken naar:
+The Wi-Fi passwords are saved as plain text in the move folder. Keep the drive safe, and delete the folder when the move is done.	De wifi-wachtwoorden worden als gewone tekst in de verhuismap bewaard. Bewaar de schijf goed en verwijder de map als de verhuizing klaar is.
+Packing up...	Bezig met inpakken...
+Packing up	Inpakken
+PC Move itself	PC Move zelf
+desktop background	bureaubladachtergrond
+copying {0}	{0} kopiëren
+Packing up failed: {0}	Inpakken mislukt: {0}
+Packing up failed:	Inpakken mislukt:
+Stopped. What was copied so far is in {0} - click Pack up to start again.	Gestopt. Wat tot nu toe is gekopieerd, staat in {0} - klik op Inpakken om opnieuw te beginnen.
+Done: {0}	Klaar: {0}
+Everything is packed up in:	Alles is ingepakt in:
+Some files in {0} could not be copied - usually because a program had them open. Close your programs and click Pack up again to try once more.	Sommige bestanden in {0} konden niet worden gekopieerd - meestal omdat een programma ze open had. Sluit je programma's en klik nog eens op Inpakken.
+Next: take the drive to your new PC, open this folder there and start PC-Move.exe, then choose "This is my NEW PC".	Volgende stap: neem de schijf mee naar je nieuwe pc, open daar deze map en start PC-Move.exe, en kies dan "Dit is mijn NIEUWE pc".
+Run this on your new PC. Open the move folder from your old PC, tick what you want, then click Unpack. Files that are already here are never overwritten.	Gebruik dit op je nieuwe pc. Open de verhuismap van je oude pc, vink aan wat je wilt en klik op Uitpakken. Bestanden die hier al staan, worden nooit overschreven.
+Unpack checked items	Aangevinkte items uitpakken
+Open a move folder...	Verhuismap openen...
+No move folder open yet. Plug in the drive from your old PC and click "Open a move folder...".	Nog geen verhuismap open. Sluit de schijf van je oude pc aan en klik op "Verhuismap openen...".
+Choose the "PC Move - ..." folder you made on your old PC.	Kies de map "PC Move - ..." die je op je oude pc hebt gemaakt.
+That folder is not a PC Move folder (it has no pc-move.json).	Die map is geen PC Move-map (er staat geen pc-move.json in).
+Choose the folder whose name starts with "PC Move - ", on the drive you used on the old PC.	Kies de map waarvan de naam begint met "PC Move - ", op de schijf die je op de oude pc gebruikte.
+Move folder: {0}	Verhuismap: {0}
+From {0} ({1}), packed up on {2}.	Van {0} ({1}), ingepakt op {2}.
+Packing up did not finish on the old PC, so some files may be missing.	Het inpakken op de oude pc is niet afgemaakt, dus er kunnen bestanden ontbreken.
+Checking what this PC already has (up to a minute)...	Kijken wat deze pc al heeft (tot een minuut)...
+Checking this PC	Deze pc controleren
+programs already installed (asking winget)	programma's die al geïnstalleerd zijn (winget vragen)
+needs winget - see the note below	winget nodig - zie de opmerking hieronder
+already on this PC	staat al op deze pc
+will be installed	wordt geïnstalleerd
+will be installed from the Microsoft Store	wordt geïnstalleerd uit de Microsoft Store
+{0}  ->  {1}	{0}  ->  {1}
+goes into OneDrive on this PC; files already here are skipped	gaat naar OneDrive op deze pc; bestanden die hier al staan worden overgeslagen
+files already here are skipped	bestanden die hier al staan worden overgeslagen
+will be added	wordt toegevoegd
+will be added - Windows asks the password once	wordt toegevoegd - Windows vraagt één keer het wachtwoord
+already {0}	al {0}
+{0} -> {1}	{0} -> {1}
+your picture from the old PC	je afbeelding van de oude pc
+{0} bookmarks - saved to Documents, then you import them (see To do)	{0} bladwijzers - worden in Documenten gezet, daarna importeer je ze (zie Te doen)
+winget is missing on this PC, so programs cannot be installed automatically. Install "App Installer" from the Microsoft Store (Settings > Open the Store page), then open the move folder again.	winget ontbreekt op deze pc, dus programma's kunnen niet automatisch worden geïnstalleerd. Installeer "App Installer" uit de Microsoft Store en open daarna de verhuismap opnieuw.
+{0} item(s) ready to unpack. Afterwards, the To do page has {1} step(s) to do yourself.	{0} item(s) klaar om uit te pakken. Daarna staan er op de pagina Te doen {1} stap(pen) die je zelf doet.
+Nothing left to unpack - everything is already on this PC. The To do page has {0} step(s) to do yourself.	Niets meer uit te pakken - alles staat al op deze pc. Op de pagina Te doen staan {0} stap(pen) die je zelf doet.
+Unpack {0} item(s) onto this PC?	{0} item(s) uitpakken op deze pc?
+Files that are already here are not overwritten. Settings can be undone in Settings.	Bestanden die hier al staan, worden niet overschreven. Instellingen kun je ongedaan maken bij Instellingen.
+{0} program(s) will be installed. Some installers ask for permission (a Windows prompt) - to avoid that, click No and use "Run as administrator" first.	Er worden {0} programma('s) geïnstalleerd. Sommige installatieprogramma's vragen toestemming (een Windows-venster) - klik op Nee en gebruik eerst "Als beheerder starten" om dat te voorkomen.
+Installing {0} program(s) can take a while; you can keep using the PC.	{0} programma('s) installeren kan even duren; je kunt de pc gewoon blijven gebruiken.
+waiting...	wachten...
+Unpacking...	Bezig met uitpakken...
+Unpacking	Uitpakken
+setting: {0}	instelling: {0}
+Wi-Fi: {0}	Wifi: {0}
+bookmarks: {0}	bladwijzers: {0}
+installing {0} ({1} of {2})	{0} installeren ({1} van {2})
+not done - you pressed Cancel	niet gedaan - je klikte op Annuleren
+done	klaar
+Windows did not accept the picture	Windows accepteerde de afbeelding niet
+Windows did not accept it	Windows accepteerde het niet
+saved to Documents - import it next (see To do)	in Documenten gezet - importeer het nu (zie Te doen)
+stopped - you pressed Cancel	gestopt - je klikte op Annuleren
+some files could not be copied	sommige bestanden konden niet worden gekopieerd
+{0} file(s) copied	{0} bestand(en) gekopieerd
+everything was already here	alles stond hier al
+took longer than 30 minutes - stopped	duurde langer dan 30 minuten - gestopt
+installed	geïnstalleerd
+{0} item(s) done.	{0} item(s) klaar.
+{0} item(s) done, {1} did not work (see the Status column) - tick them and click Unpack to try again.	{0} item(s) klaar, {1} lukte niet (zie de kolom Status) - vink ze aan en klik op Uitpakken om het opnieuw te proberen.
+Unpacked: {0} item(s) done.	Uitgepakt: {0} item(s) klaar.
+Unpacked: {0} item(s) done, {1} did not work - see the Status column.	Uitgepakt: {0} item(s) klaar, {1} lukte niet - zie de kolom Status.
+Some Explorer and taskbar settings show after you sign out and back in.	Sommige instellingen van Verkenner en de taakbalk zie je pas na af- en weer aanmelden.
+Next: the To do page has {0} step(s) to do yourself.	Volgende stap: op de pagina Te doen staan {0} stap(pen) die je zelf doet.
+What PC Move cannot do for you, one step at a time. Click a step, then the button: it opens the right place. Tick a step when it is done.	Wat PC Move niet voor je kan doen, stap voor stap. Klik op een stap en dan op de knop: die opent de juiste plek. Vink een stap aan als hij klaar is.
+Do this step	Deze stap doen
+Step	Stap
+Why	Waarom
+Open a move folder on the Unpack page first.	Open eerst een verhuismap op de pagina Uitpakken.
+{0} step(s) left.	Nog {0} stap(pen).
+All done - enjoy your new PC.	Alles klaar - veel plezier met je nieuwe pc.
+Click a step in the list first.	Klik eerst op een stap in de lijst.
+Import your {0} bookmarks ({1})	Je bladwijzers van {0} importeren ({1})
+In {0}: import, choose "Bookmarks HTML file" and pick the file in Documents > Bookmarks from the old PC.	In {0}: kies importeren, dan "HTML-bestand met bladwijzers" en kies het bestand in Documenten > Bookmarks from the old PC.
+Sign in to {0}	Inloggen in {0}
+Saved passwords and open tabs come back when you sign in (they cannot be copied).	Opgeslagen wachtwoorden en open tabbladen komen terug als je inlogt (ze kunnen niet worden gekopieerd).
+Sign in to Firefox	Inloggen in Firefox
+Firefox bookmarks and passwords come back through your Firefox account.	Firefox-bladwijzers en -wachtwoorden komen terug via je Firefox-account.
+Sign in to OneDrive	Inloggen in OneDrive
+{0} were in OneDrive on the old PC - they come back when you sign in.	{0} stonden op de oude pc in OneDrive - ze komen terug als je inlogt.
+Connect to Wi-Fi "{0}"	Verbinden met wifi "{0}"
+Its password was not packed up - Windows asks for it once.	Het wachtwoord is niet ingepakt - Windows vraagt er één keer om.
+Sign in to Steam and install your games	Inloggen in Steam en je games installeren
+Your games are in your Steam library; Steam downloads them again.	Je games staan in je Steam-bibliotheek; Steam downloadt ze opnieuw.
+Install Microsoft 365 (Office)	Microsoft 365 (Office) installeren
+Sign in at microsoft365.com with the same account, then click Install apps.	Log in op microsoft365.com met hetzelfde account en klik op Apps installeren.
+Install {0}	{0} installeren
+winget does not know this program - get it from its maker's website.	winget kent dit programma niet - haal het van de website van de maker.
+Choose your default browser and apps	Je standaardbrowser en -apps kiezen
+Windows only lets you do this yourself.	Windows laat je dit alleen zelf doen.
+Add your printer	Je printer toevoegen
+Printers usually appear by themselves on the same network; otherwise add it here.	Printers verschijnen meestal vanzelf op hetzelfde netwerk; voeg hem anders hier toe.
+Run Windows Update	Windows Update uitvoeren
+A new PC often has drivers and updates waiting.	Op een nieuwe pc staan vaak stuurprogramma's en updates klaar.
+Delete the move folder when everything works	De verhuismap verwijderen als alles werkt
+It holds a copy of your files and your Wi-Fi passwords.	Er staat een kopie van je bestanden en je wifi-wachtwoorden in.
+{0} is not installed on this PC yet. Install it first (it may be in the list on the Unpack page), then try this step again.	{0} is nog niet op deze pc geïnstalleerd. Installeer het eerst (het staat misschien in de lijst op de pagina Uitpakken) en probeer deze stap dan opnieuw.
+{0} is not installed on this PC yet.	{0} is nog niet op deze pc geïnstalleerd.
+How PC Move looks and behaves. Changes are saved straight away.	Hoe PC Move eruitziet en werkt. Wijzigingen worden meteen bewaard.
+Language	Taal
+Takes effect when PC Move restarts.	Werkt nadat PC Move opnieuw is gestart.
+Automatic (Windows language)	Automatisch (taal van Windows)
+Restart now	Nu opnieuw starten
+Theme	Thema
+Light, dark, or the same as Windows. Takes effect when PC Move restarts.	Licht, donker of hetzelfde als Windows. Werkt nadat PC Move opnieuw is gestart.
+Same as Windows	Hetzelfde als Windows
+Light	Licht
+Dark	Donker
+Undo	Ongedaan maken
+Puts back the Windows settings and desktop background that PC Move changed on this PC. Programs, files and Wi-Fi networks stay: remove those the usual way if you don't want them.	Zet de Windows-instellingen en bureaubladachtergrond terug die PC Move op deze pc heeft veranderd. Programma's, bestanden en wifi-netwerken blijven: verwijder die op de gewone manier als je ze niet wilt.
+Undo settings changes	Instellingen terugzetten
+Undo settings changes ({0})	Instellingen terugzetten ({0})
+Put back {0} setting(s) the way they were before PC Move changed them?	{0} instelling(en) terugzetten zoals ze waren voordat PC Move ze veranderde?
+Done. Some Explorer and taskbar settings show after you sign out and back in.	Klaar. Sommige instellingen van Verkenner en de taakbalk zie je pas na af- en weer aanmelden.
+Updates	Updates
+You have version {0}. New versions come from github.com/{1} and are checked against GitHub's checksum before they are installed.	Je hebt versie {0}. Nieuwe versies komen van github.com/{1} en worden met de controlesom van GitHub gecontroleerd voordat ze worden geïnstalleerd.
+Check for updates when PC Move starts	Op updates controleren als PC Move start
+Check for updates now	Nu op updates controleren
+Downloading...	Downloaden...
+Install	Installeren
+PC Move runs straight from the file - installing is not needed. Install it if you want it in the Start menu and in Settings > Apps.	PC Move werkt direct vanuit het bestand - installeren is niet nodig. Installeer het als je het in het Startmenu en in Instellingen > Apps wilt hebben.
+Install on this PC	Op deze pc installeren
+Uninstall	Verwijderen
+Files	Bestanden
+PC Move keeps a log of what it did and its settings in {0}.	PC Move houdt een logboek bij van wat het deed, en bewaart zijn instellingen, in {0}.
+Open the log	Logboek openen
+Open the folder	Map openen
+Nothing has been logged yet.	Er is nog niets vastgelegd.
+Help and feedback	Hulp en feedback
+Something not working, or an idea? It opens a report on GitHub with the version, Windows and recent errors already filled in (your name, folders and PC name are blanked out) - you see everything before you send it.	Werkt iets niet, of heb je een idee? Dit opent een melding op GitHub met de versie, Windows en recente fouten al ingevuld (je naam, mappen en pc-naam zijn weggelaten) - je ziet alles voordat je het verstuurt.
+Report a problem...	Probleem melden...
+Suggest an idea...	Idee voorstellen...
+This opens GitHub with a new problem report, filled in with:	Dit opent GitHub met een nieuwe probleemmelding, ingevuld met:
+You can read and change everything there before you press Submit. You need a free GitHub account.	Je kunt daar alles lezen en aanpassen voordat je op Submit klikt. Je hebt een gratis GitHub-account nodig.
+About	Over
+PC Move {0} - free and open source (MIT licence). Privacy: everything stays on your own PCs and drive. The only internet use is the update check (GitHub) and winget, which downloads the programs you move.	PC Move {0} - gratis en open source (MIT-licentie). Privacy: alles blijft op je eigen pc's en schijf. Internet wordt alleen gebruikt voor de updatecontrole (GitHub) en door winget, dat de programma's downloadt die je verhuist.
+Install from PC-Move.exe, not from the script.	Installeer vanuit PC-Move.exe, niet vanuit het script.
+Installing failed: {0}	Installeren mislukt: {0}
+PC Move is installed. It is in the Start menu, and you can uninstall it in Settings > Apps.	PC Move is geïnstalleerd. Het staat in het Startmenu en je kunt het verwijderen via Instellingen > Apps.
+Remove PC Move from this PC?	PC Move van deze pc verwijderen?
+Also delete its settings and log?	Ook de instellingen en het logboek verwijderen?
+PC Move has been removed.	PC Move is verwijderd.
+Couldn't check for updates:	Kon niet op updates controleren:
+You have the latest version ({0}).	Je hebt de nieuwste versie ({0}).
+PC Move {0} is available (you have {1}).	PC Move {0} is beschikbaar (je hebt {1}).
+It was installed with winget, so winget updates it. Update now? (A window opens; start PC Move again afterwards.)	Het is met winget geïnstalleerd, dus winget werkt het bij. Nu bijwerken? (Er opent een venster; start PC Move daarna opnieuw.)
+Open the download page?	De downloadpagina openen?
+Update now? The app restarts by itself.	Nu bijwerken? De app start vanzelf opnieuw.
+Downloading the update	De update downloaden
+Update failed: {0}	Bijwerken mislukt: {0}
+Couldn't replace the app file ({0}). Download it yourself from:	Kon het app-bestand niet vervangen ({0}). Download het zelf van:
+App colours	App-kleuren
+Windows colours	Windows-kleuren
+Taskbar icons	Pictogrammen op de taakbalk
+Search on the taskbar	Zoeken op de taakbalk
+File name extensions	Bestandsextensies
+Hidden files	Verborgen bestanden
+File Explorer opens on	Verkenner opent op
+Mouse pointer speed	Snelheid van de muisaanwijzer
+Double-click speed	Dubbelkliksnelheid
+dark	donker
+light	licht
+on the left	links
+in the centre	in het midden
+hidden	verborgen
+icon	pictogram
+search box	zoekvak
+icon and label	pictogram en label
+shown	zichtbaar
+This PC	Deze pc
+Home	Start
+Windows default	standaard van Windows
+already dark	al donker
+already light	al licht

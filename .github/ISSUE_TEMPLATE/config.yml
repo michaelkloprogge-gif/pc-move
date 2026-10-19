@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How PC Move works
+    url: https://github.com/michaelkloprogge-gif/pc-move#readme
+    about: What PC Move moves, how to use it, and answers to common questions.
