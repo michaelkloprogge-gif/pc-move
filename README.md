@@ -48,6 +48,8 @@ Everything stays on your own PCs and drive. The only internet use is the update 
 
 `.\build-exe.ps1` builds `dist\PC-Move.exe`: a small C# host with `pc-move.ps1` embedded, compiled with the C# compiler that ships with Windows - nothing to install. You can also run the script directly with `PC-Move.cmd`.
 
+`.\build-msix.ps1` packs that exe as `dist\PC-Move.msix` for the Microsoft Store (needs the Windows SDK; the Store signs it). `-Register` installs the unpacked package on this PC to try it (Developer Mode). The Store copy leaves updates to the Store.
+
 Tests: `.\tests\Test-Languages.ps1` (translation files) and `powershell -STA -File .\tests\Test-App.ps1 [-Language nl]` (a real move between two temporary folders, in a hidden window).
 
 Release: bump `$AppVersion` in `pc-move.ps1`, then `.\publish-release.ps1 -Notes "..."`. GitHub Actions tests, builds and publishes it, and installed copies offer the update.
