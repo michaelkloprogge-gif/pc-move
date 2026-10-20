@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1
+
+- To-do steps you ticked were forgotten after a restart when there were two or more. Fixed.
+- Ready for the Microsoft Store: the Store version leaves installing and updating to the Store.
+- Available with winget: `winget install MichaelKloprogge.PCMove` (once the package is approved).
+
 ## 1.0.0
 
 First version.
