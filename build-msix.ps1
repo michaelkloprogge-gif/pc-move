@@ -4,7 +4,7 @@
 # Identity values come from Partner Center > the app > Product identity.
 param(
     [string]$Name = 'MichaelKloprogge.PCMove',
-    [string]$Publisher = 'CN=Michael Kloprogge',
+    [string]$Publisher = 'CN=22C69B52-58BA-4988-A156-9BB1FEABF928',
     [string]$PublisherName = 'Michael Kloprogge',
     [switch]$Register
 )
