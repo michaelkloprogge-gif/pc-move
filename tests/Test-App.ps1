@@ -92,6 +92,8 @@ Check ([bool]($todo | Where-Object { $_.Text -match 'Some Old Program' })) 'prog
 Check ([bool]($todo | Where-Object { $_.Id -eq 'firefox' })) 'Firefox step on the to-do list'
 Check ([bool]($todo | Where-Object { $_.Id -like 'bm|*' })) 'bookmark import step on the to-do list'
 "  to do: $(($todo | ForEach-Object Text) -join '; ')"
+$TodoFile = Join-Path $root 'todo.json'; ConvertTo-Json @('a', 'b') | Set-Content $TodoFile -Encoding UTF8
+Check (@(Get-TodoDone).Count -eq 2) 'several ticked to-do steps are read back'
 
 # Clean up: the test setting's undo entry, the test key and folders.
 Save-UndoList @(Get-UndoList | Where-Object { $_.P -ne $testKey })

@@ -1280,7 +1280,7 @@ $BrowserExe = @{
     Vivaldi = @("$env:LOCALAPPDATA\Vivaldi\Application\vivaldi.exe", "$env:ProgramFiles\Vivaldi\Application\vivaldi.exe")
 }
 $BrowserImport = @{ Chrome = 'chrome://settings/importData'; Edge = 'edge://settings/profiles/importBrowsingData'; Brave = 'brave://settings/importData'; Vivaldi = 'vivaldi://settings/import' }
-function Get-TodoDone { if (Test-Path $TodoFile) { try { @(Get-Content $TodoFile -Raw -Encoding UTF8 | ConvertFrom-Json) } catch { @() } } }
+function Get-TodoDone { if (Test-Path $TodoFile) { try { @(Get-Content $TodoFile -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ }) } catch { @() } } }   # (5.1 hands a JSON array back as one item)
 function Get-TodoItems {
     if (-not $script:Bundle) { return }
     $m = $script:Bundle.M
@@ -1414,7 +1414,7 @@ $btnThemeRestart.Add_Click({ Restart-App })
 Add-SetSection 'Undo' 'Puts back the Windows settings and desktop background that PC Move changed on this PC. Programs, files and Wi-Fi networks stay: remove those the usual way if you don''t want them.'
 $btnUndo = New-Button 'Undo settings changes'
 Add-SetRow @($btnUndo)
-function Get-UndoList { if (Test-Path $UndoFile) { try { @(Get-Content $UndoFile -Raw -Encoding UTF8 | ConvertFrom-Json) } catch { @() } } else { @() } }
+function Get-UndoList { if (Test-Path $UndoFile) { try { @(Get-Content $UndoFile -Raw -Encoding UTF8 | ConvertFrom-Json | ForEach-Object { $_ }) } catch { @() } } else { @() } }
 function Save-UndoList($List) { if (@($List).Count) { ConvertTo-Json @($List) -Depth 4 | Set-Content $UndoFile -Encoding UTF8 } else { Remove-Item $UndoFile -ErrorAction SilentlyContinue } }
 function Update-UndoButton { $n = @(Get-UndoList).Count; $btnUndo.Enabled = $n -gt 0; $btnUndo.Text = if ($n) { "Undo settings changes ($n)" } else { 'Undo settings changes' } }
 $btnUndo.Add_Click({
